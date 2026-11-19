@@ -12,13 +12,13 @@ public class Solution {
         while(k < arr.Length){
             if(nums1[i] < nums2[j]){
                 arr[k] = nums1[i];
-                if(i == n1-1){
+                if(i >= n1-1){
                     nums1[i] = Int32.MaxValue;
                 }else{i++;}
             }
             else{
                 arr[k] = nums2[j];
-                if(j == n2-1){
+                if(j >= n2-1){
                     nums2[j] = Int32.MaxValue;
                 }else{j++;}
             }
